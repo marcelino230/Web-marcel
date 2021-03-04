@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>My Profile - Marcel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" />
+  <meta name="keywords" content="My Profile" />
+  <link id="logo" href="images/logo.png" rel="shortcut icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <nav id="myHeader" class="navbar navbar-expand-lg navbar-dark bg-dark probootstrap-navabr-dark">
+    <div class="container header">
+      <img src="images/logo.png" style="width: 30px; height: 30px;"> <a class="navbar-brand" href="index.html"> Web
+        Marcel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-nav"
+        aria-controls="probootstrap-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="probootstrap-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#aboutme" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#pofilo" class="nav-link">My Portofolio</a></li>
+          <li class="nav-item"><a href="#gallerysaya" class="nav-link">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <section style="background-color: rgba(15, 13, 13, 0.678);" class="probootstrap-cover probootstrap-scene-0"
+    id="pofilo">
+    <div class="container">
+      <div class="row align-items-center ">
+        <center>
+          <h2 class="probootstrap-heading" style="margin-top: 150px; margin-bottom: -100px;">My Portofolio</h2>
+          <div id="imgselect" class="title-image">
+            <br>
+            <div class="images">
+              <img src="images/mc8.jpg" class="big">
+              <div class="thumbnail">
+                <img src="images/mc3.jpg" class="thumb">
+                <img src="images/mc2.jpg" class="thumb">
+                <img src="images/mc7.jpg" class="thumb">
+                <img src="images/mc8.jpg" class="thumb">
+                <img src="images/mc4.jpg" class="thumb">
+                <img src="images/mc1.jpg" class="thumb">
+                <img src="images/mc6.jpg" class="thumb">
+                <img src="images/mc9.jpg" class="thumb">
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="probootstrap-section probootstrap-scene-1 " style="background-color: #2A363B;" id="aboutme">
+    <div class="container ">
+      <div class="row mb-5 justify-content-center text-center">
+        <div class="col-lg-8">
+          <h2 class="probootstrap-heading">About Me</h2>
+          <div id="about">
+            <img src="images/mc1.jpg" name="slide">
+            <script language="javascript">
+              var image1 = new Image();
+              image1.src = "images/mc2.jpg";
+
+              var image2 = new Image();
+              image2.src = "images/mc3.jpg";
+
+              var image3 = new Image();
+              image3.src = "images/mc4.jpg";
+              var step = 1;
+            </script>
+
+
+            <script>
+              var step = 1;
+
+              function gerak() {
+                if (!document.images)
+                  return
+                document.images.slide.src = eval("image" + step + ".src");
+                if (step < 3)
+                  step++;
+                else
+                  step = 1;
+                setTimeout("gerak()", 2000);
+              }
+              gerak();
+            </script>
+
+            <div class="about-text">
+              <p><b>Profile</b> <br>Username ( Marcel. ) <br>Hai,, Nama saya Marcelino Oktaviansyah sebut saja Marcel
+                <br>Lahir tanggal 23 Oktober 2000 di Palu, saya tinggal di Bogor tepatnya di Bukit Cimanggu City Bogor.
+              </p>
+              <ul>
+                <li class="riwayat">
+                  <p style="margin-bottom: 20px;"><b>Riwayat</b></p>
+                </li>
+                <li class="riwayat"> SD : SD MardiYuana 3 Bogor.</li>
+                <li class="riwayat">SMP : SMP Budi Mulia Bogor.</li>
+                <li class="riwayat">SMA : SMAN 10 Bogor.</li>
+              </ul>
+              <p><b>Objectivitas</b><br>Sekarang menempuh pendidikan di Universitas Nasional mengambil prodi Sistem
+                Informasi, alasan saya mengambil Sistem
+                Informasi karena saya mempunyai cita-cita sebagai programmer yang handal sedari SMA. Hobby saya adalah
+                basket, lari,
+                renang. Makanan kesukaan saya adalah nasi goreng, bakso, soto. Warna kesukaan saya adalah hitam, biru,
+                merah.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mb-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="probootstrap-devices">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="probootstrap-cover probootstrap-bg " style="background-color: black;" id="gallerysaya">
+    <div class="container sldi">
+      <div class="row align-items-center justify-content-center probootstrap-vh-75">
+        <div class="col-md-6 text-center" style="margin-top: 80px;">
+          <center>
+            <h2>Silder Images</h2>
+            <br><br>
+          </center>
+          <div class="slider">
+            <figure>
+              <div class="slider1">
+                <img src="images/mc2.jpg">
+              </div>
+
+              <div class="slider1">
+                <img src="images/mc6.jpg">
+              </div>
+
+              <div class="slider1">
+                <img src="images/mc4.jpg">
+              </div>
+
+              <div class="slider1">
+                <img src="images/mc9.jpg">
+              </div>
+
+              <div class="slider1">
+                <img src="images/mc3.jpg">
+              </div>
+          </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer class="probootstrap-footer probootstrap-bg-dark" style="background-color: #141a1d;">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-5 order-md-2 order-1">
+          <div class="probootstrap-footer-widget mb-4">
+            <ul class="probootstrap-footer-social list-unstyled float-md-right float-left">
+              <li><a href="mailto:marcelinookta@gmail.com" target="_blank"><span class="icon-email"></span></a></li>
+              <li><a href="https://www.instagram.com/marcel.okta/" target="_blank"><span
+                    class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-7 order-md-1 order-2">
+          <p>&copy; Present 2020. My Web Profile <br> 2020 Web Marcel . <span class="icon-heart"></span> All rights
+            reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
